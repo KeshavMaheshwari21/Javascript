@@ -35,3 +35,24 @@ console.log(typeof bigNumber); // bigint
 console.log(typeof outTemp); // objrct
 console.log(typeof scoreValue); // number
 console.log(typeof myFunction); // function
+
+// **************************************************************
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myName = "abcdef"
+let anotherName = myName
+anotherName = "ghijkl"
+
+console.log(anotherName);
+
+let userOne = {
+    email : "hii@gmail.com",
+    upi : "user@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "user@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
